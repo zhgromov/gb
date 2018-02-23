@@ -1,0 +1,64 @@
+$slider-border-color: #f16d7f
+$slider-text-color: #222222
+
+=slider-text-font-top
+  font-family: Lato, sans-serif
+  font-size: 60px
+  font-weight: 900
+  text-transform: uppercase
+
+=slider-text-font-bottom
+  font-family: Lato, sans-serif
+  font-size: 40px
+  font-weight: 400
+  text-transform: uppercase
+
+.slider
+  display: block
+  width: 100%
+  height: 614px
+  //background-color: #31e800
+  background-color: #E8E8E8
+
+.imgSlider
+  display: flex
+  align-items: center
+  margin: 0 auto
+  background-image: url("../img/layer-24.svg")
+  background-position: 40px -150px
+  width: 1140px
+  height: 100%
+
+.sliderContainer
+  display: flex
+  justify-content: flex-start
+  padding-left: 12px
+
+.sliderBorder
+  display: flex
+  align-content: center
+  width: 12px
+  height: 97px
+  margin-top: 13px
+  margin-right: 12px
+  background-color: $slider-border-color
+
+
+.sliderTextContainer
+  display: block
+
+.sliderTextTop
+  @include slider-text-font-top
+  color: $slider-text-color
+
+
+.sliderTextBottom
+  @include slider-text-font-bottom
+  color: $slider-text-color
+
+.sliderTextBottom span
+  color: $slider-border-color
+
+.containerX
+  width: 100%
+  height: 700px

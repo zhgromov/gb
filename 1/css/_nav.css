@@ -1,0 +1,48 @@
+/*
+Error: Properties are only allowed within rules, directives, mixin includes, or other properties.
+        on line 5 of nav.sass
+
+1: .nav
+2:   display: block
+3:   width: 100%
+4:   height: 51px
+5: background-color: #2c13ff
+6: 
+7: .headerMegaMenuList
+8:   display: flex
+9:   justify-content: center
+10:   margin-top: 0
+
+Backtrace:
+nav.sass:5
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/tree/visitors/check_nesting.rb:59:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:24:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:35:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Properties are only allowed within rules, directives, mixin includes, or other properties.\A         on line 5 of nav.sass\A \A 1: .nav\A 2:   display: block\A 3:   width: 100%\A 4:   height: 51px\A 5: background-color: #2c13ff\A 6: \A 7: .headerMegaMenuList\A 8:   display: flex\A 9:   justify-content: center\A 10:   margin-top: 0"; }

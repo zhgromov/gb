@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-2занятие-6задание</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    /**
+     * сначала задаем рэндомы переменным, потом создаем функции арифметических действий,
+     * после чего засовываем их в свитч функции mathOperation из трех параметров, два из которых-
+     * объявленные переменные, а operation - задается пользователем.
+     * По хорошему еще нужно сделать проверку на ноль и на цифры, но нет сил, сорри
+     * @param {number} arg1 первое число рэндома
+     * @param {number} arg2 второе число рэндома
+     * @param {string} operation знаки вычислений
+     */
+
+//    Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+//    где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+//    переданного значения операции (использовать switch) выполнить одну из арифметических операций
+//    (использовать функции из задания 5) и вернуть полученное значение.
+    let arg1 = Math.floor(Math.random()*100);
+    let arg2 = Math.floor(Math.random()*100);
+    function addition (arg1,arg2) {
+        return arg1+arg2;
+    }
+
+    function subtract (arg1,arg2) {
+        return arg1-arg2;
+    }
+
+    function del (arg1,arg2) {
+        return arg1/arg2;
+    }
+
+    function divide (arg1,arg2) {
+        return arg1*arg2;
+    }
+
+    function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+        case "-": alert(subtract(arg1,arg2)); break;
+        case "+": alert(addition (arg1,arg2)); break;
+        case "/": alert(del (arg1,arg2)); break;
+        case "*": alert(divide (arg1,arg2)); break;
+        }
+    }
+    let operation = prompt ("Введите знак действия +,-,/,*");
+    mathOperation (arg1,arg2, operation);
+
+//    addition (arg1,arg2);
+//    del (arg1,arg2);
+//    divide (arg1,arg2);
+//    subtract(arg1,arg2);   нужно ли объявлять здесь функции? и без них пашет же??
+
+</script>
+</body>
+</html>

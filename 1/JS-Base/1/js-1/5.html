@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JS-1 5 задание Gromov</title>
+</head>
+<body>
+<script type="text/javascript">
+    "use strict";
+
+    let a = prompt("Введите шестизначный номер билета");
+//    let b = (a % 10); //6
+//    let c = (Math.floor(a / 10)) % 10; //5
+//    let d = (Math.floor(a / 100)) % 10; //4
+//    let B = (Math.floor(a / 1000)) % 10; //3
+//    let C = (Math.floor(a / 10000)) % 10; // 2
+//    let D = (Math.floor(a / 100000)); //1
+    //я хз, как можно самому до этого додуматься ><
+
+    if (((a % 10)+((Math.floor(a / 10)) % 10)+((Math.floor(a / 100)) % 10))===
+            ((Math.floor(a / 1000)) % 10)+((Math.floor(a / 10000)) % 10)+(Math.floor(a / 100000))) {
+        alert("Поздравляем, вам выпал счастливый билетик! ");
+    }
+    else {
+        alert("К сожалению, ваш билет на выиграл, но вы можете попробовать еще раз. Обновите страницу");
+    }
+
+</script>
+</body>
+</html>
